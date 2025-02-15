@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Air Quality Visualization 
 
-## Getting Started
+This is a Next.js application for visualizing air quality data using interactive charts.
 
-First, run the development server:
+## 🛠️ Tech Stack
 
+- **Next.js 14** – React-based framework for server-side rendering and static site generation  
+- **Recharts** – Data visualization library for interactive charts  
+- **Prettier** – Code formatter for consistent styling  
+- **Tailwind CSS** – Utility-first CSS framework for styling  
+
+---
+
+## 🚀 Getting Started
+
+
+### 1. Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configure environment variables
+- Copy the example environment file:
+```bash
+cp .env.example .env
+```
+- Open `.env` and add your backend API URL:
+```env
+NEXT_PUBLIC_BACKEND_API_URL=https://your-backend-api.com
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Start the development server
+```bash
+yarn dev
+```
+The application will be running at: [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛎️ Available Commands
 
-To learn more about Next.js, take a look at the following resources:
+| Command                 | Description                                   |
+|-------------------------|-----------------------------------------------|
+| `yarn dev`             | Run the development server                   |
+| `yarn build`           | Build the application for production         |
+| `yarn start`           | Start the production server                  |
+| `yarn lint`            | Run ESLint to check for code quality         |
+| `yarn format`          | Format code using Prettier                  |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 💎 Code Style & Quality
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Prettier**: Auto-formats code for consistency  
+- **ESLint**: Linting with Next.js recommended rules  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Format Code:
+```bash
+yarn format
+```
+
+### Lint Code:
+```bash
+yarn lint
+```
+
+---
+
+## 🚀 Building for Production
+
+1. **Create a production build**:
+```bash
+yarn build
+```
+
+2. **Run the production server**:
+```bash
+yarn start
+```
+
+The production server will be available at: [http://localhost:3000](http://localhost:3000)
+
